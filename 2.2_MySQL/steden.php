@@ -4,15 +4,10 @@ ini_set( 'display_errors', 1 );
 
 require_once 'connect_db.php';
 require_once '../templates/html_components.php';
-
-//functie om php data in array te steken
-function GetData($sql_query) {
-    global $conn_steden;
-    return $conn_steden -> query($sql_query);
-}
+require_once '../templates/functions.php';
 
 //3 afbeeldingen in een array
-$images = GetData("SELECT * from images");
+$images = GetData("SELECT * FROM images");
 
 PrintHead();
 
