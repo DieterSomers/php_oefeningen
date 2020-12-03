@@ -16,7 +16,7 @@ PrintHead();
 <body>
 
 <?php
-    PrintJumbo("");
+    PrintJumbo();
 ?>
 
 <div class="container">

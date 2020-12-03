@@ -6,7 +6,7 @@ function PrintHead(){
 }
 
 //functie jumbotron toe te voegen
-function PrintJumbo($type){
+function PrintJumbo($type = null){
     if ($type == "detail") {
         echo file_get_contents("../templates/jumbo_detail.html");
     }
