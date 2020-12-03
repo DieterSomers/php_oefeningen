@@ -15,4 +15,9 @@ function PrintJumbo($type){
     }
 }
 
+//functie om kolom met variabele te printen
+function PrintColumn($data_arr){
+    require '../templates/column.html';
+}
+
 ?>

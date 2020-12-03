@@ -28,12 +28,7 @@ PrintHead();
         {
             while($row = $images->fetch_assoc())
             {
-                print '<div class="col-sm-4">';
-                print '<h3>' . $row["img_title"] . '</h3>';
-                print '<p>' . $row["img_width"] . ' x ' . $row["img_height"] . ' pixels</p>';
-                print '<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>';
-                print '<img class="img-fluid" src="../1.2_bootstrap/img/' . $row["img_filename"] . '">';
-                print '</div>' ;
+                PrintColumn($row);
             }
         }
         else
