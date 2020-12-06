@@ -1,0 +1,46 @@
+<form id="editInfo" name="editInfo" method="POST" action="save.php">
+    <div class="form-group row">
+        <label for="staticID" class="col-sm-3 col-form-label">ID</label>
+        <div class="col-sm-9">
+            <input type="number" name="img_id" readonly class="form-control-plaintext" id="staticID" value="@img_id@">
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="inputTitle" class="col-sm-3 col-form-label">Title</label>
+        <div class="col-sm-9">
+            <input type="text" name="img_title" class="form-control" id="inputTitle" placeholder="@img_title@">
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="inputFilename" class="col-sm-3 col-form-label">Filename</label>
+        <div class="col-sm-9">
+            <input type="text" name="img_filename" class="form-control" id="inputFilename" placeholder="@img_filename@">
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="inputWidth" class="col-sm-3 col-form-label">Width</label>
+        <div class="col-sm-9">
+            <input type="number" name="img_width" class="form-control" id="inputWidth" placeholder="@img_width@">
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="inputHeight" class="col-sm-3 col-form-label">Height</label>
+        <div class="col-sm-9">
+            <input type="number" name="img_height" class="form-control" id="inputHeight" placeholder="@img_height@">
+        </div>
+    </div>
+    <div class="form-group row">
+        <label class="col-sm-3 col-form-label">Save</label>
+        <div class="col-sm-9">
+            <input type="submit">
+        </div>
+    </div>
+
+    <div class="col-sm-12 text-center">
+        <img alt=@img_title@ class="img-fluid" style="width: 50%;" src="img/@img_filename@">
+
+        <p></p>
+        <a href=steden2.php>Terug naar overzicht</a>
+        <p></p>
+    </div>
+</form>

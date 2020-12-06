@@ -6,9 +6,12 @@ function PrintHead()
     print $head;
 }
 
-function PrintJumbo($type = null){
-    if ($type == "detail") {
+function PrintJumbo($title = ""){
+    if ($title != null) {
         $jumbo = file_get_contents("templates/jumbo_detail.html");
+
+        $jumbo = str_replace("@jumbo_title@", "$title", $jumbo);
+
         print $jumbo;
     }
     else {
