@@ -3,6 +3,7 @@
 $id = $_POST["img_id"];
 
 require_once 'lib/connection_data.php';
+global $servername, $dbname, $username, $password;
 // Create and check connection
 try {
     $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);

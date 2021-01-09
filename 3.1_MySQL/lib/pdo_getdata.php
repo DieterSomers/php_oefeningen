@@ -2,6 +2,7 @@
 function GetData( $sql )
 {
     require_once 'connection_data.php';
+    global $servername, $dbname, $username, $password;
     // Create and check connection
     try {
         $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
