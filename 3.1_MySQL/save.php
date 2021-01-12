@@ -28,7 +28,7 @@ foreach ($_POST as $item => $value)
 }
 
 echo "update completed";
-echo "<a href=steden2.php>Terug naar overzicht</a>";
+echo "<a href=steden.php>Terug naar overzicht</a>";
 
 $conn = null;
 

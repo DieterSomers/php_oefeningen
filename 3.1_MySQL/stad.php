@@ -19,7 +19,7 @@ PrintJumbo("Detail informatie stad");
         $rows = GetData("select * from images where img_id=". $_GET['img_id']);
 
         //getTemplate
-        $template = file_get_contents("templates/column_detail.html");
+        $template = file_get_contents("templates/column_full.html");
 
         //merge
         $html = MergeViewWithData($template, $rows);
