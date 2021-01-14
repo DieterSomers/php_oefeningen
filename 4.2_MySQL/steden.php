@@ -10,10 +10,9 @@ PrintJumbo( $title = "Leuke plekken in Europa" ,
 
 PrintNavbar();
 
-if(key_exists('msgs', $_SESSION))
+foreach ($messages as $message)
 {
-    print $_SESSION['msgs'];
-    unset($_SESSION['msgs']);
+    print "<div class='alert alert-success'>$message</div>";
 }
 ?>
 
@@ -22,6 +21,7 @@ if(key_exists('msgs', $_SESSION))
     <div class="row">
 
         <?php
+
         //get data
         $data = GetData( "select * from images" );
 

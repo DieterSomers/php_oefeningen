@@ -26,7 +26,6 @@ PrintJumbo( $title = "Registreer gebruiker", $subtitle = "" );
 
         //add extra elements
         $extra_elements['csrf_token'] = GenerateCSRF( "register.php"  );
-        $_SESSION['msgs'] = 'Bedankt voor uw registratie!';
 
 
         //get template

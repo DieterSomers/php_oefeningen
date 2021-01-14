@@ -11,13 +11,20 @@ require_once "security.php";
 
 $errors = [];
 $old_post = [];
+$messages = [];
 
+if ( key_exists('msgs', $_SESSION)  AND is_array( $_SESSION['msgs']))
+{
+    $messages = $_SESSION['msgs'];
+}
 
 if ( key_exists( 'errors', $_SESSION ) AND is_array( $_SESSION['errors']) )
 {
     $old_post = $_SESSION['OLD_POST'];
-    $_SESSION['OLD_POST'] = null;
 
     $errors = $_SESSION['errors'];
-    $_SESSION['errors'] = null;
 }
+
+$_SESSION['msgs'] = [];
+$_SESSION['OLD_POST'] = [];
+$_SESSION['errors'] = [];

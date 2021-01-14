@@ -76,6 +76,11 @@ function SaveFormData()
         //run SQL
         $result = ExecuteSQL( $sql );
 
+        if($result AND $table == "user")
+        {
+            $_SESSION['msgs'][] = 'Bedankt voor uw registratie!';
+        }
+
         //output if not redirected
         print $sql ;
         print "<br>";
